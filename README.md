@@ -27,3 +27,5 @@ After you install the Prettier VS Code extension(https://marketplace.visualstudi
     "editor.formatOnSave": true
 }
 ```
+
+### Project Onboarding

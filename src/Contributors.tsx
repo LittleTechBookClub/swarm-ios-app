@@ -1,16 +1,24 @@
 import React from 'react';
+import { StyleSheet, Text, ScrollView } from 'react-native';
 
 const Contributors = () => {
 
     return (
-        <div>
-            <h1>Contributors</h1>
-            <ul>
-                <li>John Doe</li>
-                <li>Jane Doe</li>
-            </ul>
-        </div>
+        <ScrollView
+            contentContainerStyle={{ flexGrow: 1, justifyContent: 'center', alignItems: 'center' }}
+            style={styles.scrollView}>
+            <Text>Melisa Im</Text>
+            <Text>Linden Chiu</Text>
+        </ScrollView>
     );
 }
+
+const styles = StyleSheet.create({
+    scrollView: {
+        flex: 1,
+        backgroundColor: '#fff'
+    },
+});
+
 
 export default Contributors;
