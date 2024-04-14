@@ -29,3 +29,20 @@ After you install the Prettier VS Code extension(https://marketplace.visualstudi
 ```
 
 ### Project Onboarding
+    To get familiar with the project workflow, we ask new contributors to create a new branch:
+    `git checkout -b <githubUsername>/new-contributor`
+
+    Then go to src/Contributors.tsx and add your name to the list:
+
+    ```html
+        <ScrollView
+            contentContainerStyle={{ flexGrow: 1, justifyContent: 'center', alignItems: 'center' }}
+            style={styles.scrollView}>
+            <Text>Melisa Im</Text>
+            <Text>Monica Lam</Text>
+            <Text>Linden Chiu</Text>
+            <Text>YOUR_NAME</Text>
+
+        </ScrollView>
+    ```
+    You should then verify that your name is added properly by opening the running app and going to the Contributors tab via the bottom navigation bar. After that, open a pull request to main so an owner can approve it. Once it is approved, merge it, and you are officially part of the Swarm beekeeping project!

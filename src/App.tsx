@@ -2,14 +2,11 @@ import { registerRootComponent } from 'expo';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StyleSheet, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 import Contributors from './Contributors';
-
-//const Stack = createNativeStackNavigator();
 
 const Tab = createBottomTabNavigator();
 
@@ -28,7 +25,7 @@ const App = () => {
       <Tab.Navigator
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
-            let iconName;
+            let iconName!: keyof typeof Ionicons.glyphMap;
 
             if (route.name === 'Home') {
               iconName = focused
