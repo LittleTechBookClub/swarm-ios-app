@@ -32,16 +32,8 @@ After you install the Prettier VS Code extension(https://marketplace.visualstudi
     To get familiar with the project workflow, we ask new contributors to create a new branch:
     `git checkout -b <githubUsername>/new-contributor`
 
-    Then go to src/Contributors.tsx and add your name to the list:
+    You will make your first change/commit on this branch. This project will follow Test Driven Development principles, which means writing tests for your changes ahead of time. To make this easier for newer contributors, you will only have to modify an existing test, but you will be expected to write your own in future. For now, first go to the Contributors.spec.tsx test file. Increment the `contributors` variable by 1, and run `npm test`. You should see 1 failed test.
 
-        <ScrollView
-            contentContainerStyle={{ flexGrow: 1, justifyContent: 'center', alignItems: 'center' }}
-            style={styles.scrollView}>
-            <Text>Melisa Im</Text>
-            <Text>Monica Lam</Text>
-            <Text>Linden Chiu</Text>
-            <Text>YOUR_NAME</Text>
+    After this, go to the Contributors.tsx file, and add your name to the contributorsList array. Now when you run `npm test` again, all tests should pass. This is known as [Red-Green-Refactor.](https://www.codecademy.com/article/tdd-red-green-refactor) All features and code you add in the future will be expected to have adequate test coverage, or they will be turned back!
 
-        </ScrollView>
-
-    You should then verify that your name is added properly by opening the running app and going to the Contributors tab via the bottom navigation bar. After that, open a pull request to main so an owner can approve it. Once it is approved, merge it, and you are officially part of the Swarm beekeeping project!
+    You can then verify that your name was added properly by opening the running app and going to the Contributors tab via the bottom navigation bar. After that, open a pull request to main so an owner can approve it. Once it is approved, merge it, and you are officially part of the Swarm beekeeping project!
