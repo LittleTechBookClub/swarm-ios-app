@@ -1,17 +1,34 @@
 import React from 'react';
-import { TouchableOpacity, View, Text, StyleSheet } from 'react-native';
+import { useFonts } from 'expo-font';
+import { Text, StyleSheet, Pressable } from 'react-native';
 
 type Props = {
   text: string;
+  handleClick: () => void;
 };
 
-const Button: React.FC<Props> = ({ text }: Props) => {
+const ButtonComponent: React.FC<Props> = ({ text, handleClick }: Props) => {
+  const [fontsLoaded] = useFonts({
+    'Roboto-Medium': require('../../assets/fonts/Roboto/Roboto-Medium.ttf'),
+  });
+
+  if (!fontsLoaded) {
+    return <Text>Loading...</Text>;
+  }
+
   return (
-    <TouchableOpacity style={styles.buttonContainer}>
-      <View style={{ flex: 1 }}>
-        <Text style={styles.buttonText}>{text}</Text>
-      </View>
-    </TouchableOpacity>
+    <Pressable
+      style={({ pressed }) => [
+        {
+          backgroundColor: pressed ? '#FFFFFF' : '#000000',
+          color: pressed ? '#000000' : '#FFFFFF',
+        },
+        styles.buttonContainer,
+      ]}
+      onPress={handleClick}
+    >
+      {text}
+    </Pressable>
   );
 };
 
@@ -22,12 +39,11 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     paddingVertical: 16,
     paddingHorizontal: 40,
-  },
-  buttonText: {
-    color: '#FFFFFF',
-    fontFamily: 'Roboto Regular',
+    borderColor: '#000000',
+    borderWidth: 1,
+    fontFamily: 'Roboto-Medium',
     fontSize: 16,
     textAlign: 'center',
   },
 });
-export default Button;
+export default ButtonComponent;
