@@ -8,7 +8,7 @@ import Contributors from './Contributors';
 
 describe('Contributors', () => {
     it('should render the correct number of contributors', () => {
-        const contributors = 3;
+        const contributors = 4;
         const { getAllByLabelText } = render(<Contributors />);
         const contributorElements = getAllByLabelText('Contributor');
         expect(contributorElements.length).toBe(contributors);
