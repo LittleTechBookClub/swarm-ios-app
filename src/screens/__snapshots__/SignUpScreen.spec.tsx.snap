@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contributors should render the Welcome Screen 1`] = `
+<div>
+  SignUpScreen
+</div>
+`;
