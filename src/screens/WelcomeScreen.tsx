@@ -1,6 +1,6 @@
 import React from 'react';
 import { useFonts } from 'expo-font';
-import ButtonComponent from '../components/Button';
+import ButtonComponent from '../components/ButtonComponent';
 import { View, StyleSheet, Image, Text } from 'react-native';
 
 const WelcomeScreen = ({ navigation }: { navigation: any }) => {
