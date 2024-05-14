@@ -20,8 +20,9 @@ const ButtonComponent: React.FC<Props> = ({ text, handleClick }: Props) => {
     <Pressable
       style={({ pressed }) => [
         {
-          backgroundColor: pressed ? '#FFFFFF' : '#000000',
+          backgroundColor: pressed ? '#FFFFFF' : '#0D2818',
           color: pressed ? '#000000' : '#FFFFFF',
+          borderColor: pressed ? '#1A3930' : '#0D2818',
         },
         styles.buttonContainer,
       ]}
@@ -39,7 +40,6 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     paddingVertical: 16,
     paddingHorizontal: 40,
-    borderColor: '#000000',
     borderWidth: 1,
     fontFamily: 'Roboto-Medium',
     fontSize: 16,
