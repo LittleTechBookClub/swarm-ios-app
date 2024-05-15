@@ -41,7 +41,7 @@ After you install the Prettier VS Code extension(https://marketplace.visualstudi
 
     You can then verify that your name was added properly by opening the running app and going to the Contributors tab via the bottom navigation bar. After that, open a pull request to main so an owner can approve it. Once it is approved, merge it, and you are officially part of the Swarm beekeeping project!
 
-### Git Flow
+### Git Flow When Another PR Has Been Merged Ahead Of Yours
 
     git checkout main
     git pull --rebase

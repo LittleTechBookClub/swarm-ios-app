@@ -15,15 +15,6 @@ import SignUpScreen from './screens/SignUpScreen';
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
-// const HomeScreen = () => {
-//   return (
-//     <View style={styles.container}>
-//       <Text>Swarm Beekeeping App</Text>
-//       <StatusBar style="auto" />
-//     </View>
-//   );
-// };
-
 const HomeStack = () => {
   return (
     <Stack.Navigator initialRouteName="HomeScreen">
