@@ -3,6 +3,7 @@ import { StyleSheet, Text, ScrollView } from 'react-native';
 
 const Contributors = () => {
   const contributorsList = ['Melisa Im', 'Monica Lam', 'Linden Chiu'];
+  const contributorsList = ['Melisa Im', 'Monica Lam', 'Linden Chiu', 'Shilpa Sivarajan'];
 
   return (
     <ScrollView
