@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Contributors should render the Welcome Screen 1`] = `
+exports[`ButtonComponent should render the Button Component 1`] = `
 <Text>
   Loading...
 </Text>
