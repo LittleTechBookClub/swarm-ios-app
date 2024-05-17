@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Contributors should render the Welcome Screen 1`] = `
+exports[`LoginScreen should render the Login Screen 1`] = `
 <div>
   LoginScreen
 </div>

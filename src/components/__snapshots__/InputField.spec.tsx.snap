@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ButtonComponent should render the Button Component 1`] = `
+exports[`InputField should render the Input Field 1`] = `
 <Text>
   Loading...
 </Text>
