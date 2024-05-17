@@ -27,7 +27,7 @@ const WelcomeScreen = ({ navigation }: { navigation: any }) => {
     <View style={styles.container}>
       <Image
         source={{
-          uri: 'https://s3-alpha-sig.figma.com/img/ceba/f0c9/1d52df65bfda2146d8a56199f05e993c?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PbvjzmBR0H1OEIP7kYo8OhAQSI9RAQh9XaiXD5-6PQFNEONVvgAT7j2FZoDX5LV-Ni0jhpLQe2Fb1Igm0Trz5uPsPNcFVpj3C4JvWF3sGYOVuWvHD50bsJt8EwMAugCSWSiWLiW4WXyRuSO7jvgePgeBHytcafC1byPQqRLxIUiAUpOjyqPq1yJhk1Ax6qzKrs9G5zLY11bY2MsevVSvI5tIWrHhMSsz2W2kP61elVfkbmuMHAQTaHMHUvCtWjxifMdcJiTIblt~356FjxQKgSSsuuWsNHOiA49Q2yFf~HgLQ-f1XQ8F4kX5p7lI3UiiFE6nk6jP15iZqfHk8pMWPw__',
+          uri: '../../assets/beeSmartHome.png',
         }}
         style={{ width: 500, height: 400 }}
       />
