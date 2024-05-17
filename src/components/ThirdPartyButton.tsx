@@ -1,6 +1,5 @@
 import React from 'react';
-import { useFonts } from 'expo-font';
-import { Text, StyleSheet, Pressable, TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, TouchableOpacity, Image } from 'react-native';
 
 type Props = {
   imgSrc: string;

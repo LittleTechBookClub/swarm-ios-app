@@ -45,18 +45,9 @@ const SignUpScreen = () => {
         <View style={styles.divisionLine} />
       </View>
       <View style={styles.thirdPartyButtonContainer}>
-        <ThirdPartyButton
-          imgSrc="https://img.freepik.com/premium-vector/facebook-icon-illustration-facebook-app-logo-social-media-icon_561158-3694.jpg?size=338&ext=jpg&ga=GA1.1.2082370165.1715644800&semt=ais_user"
-          handleClick={() => {}}
-        />
-        <ThirdPartyButton
-          imgSrc="https://img.freepik.com/premium-vector/google-logo-icon-set-google-icon-searching-icons-vector_981536-453.jpg"
-          handleClick={() => {}}
-        />
-        <ThirdPartyButton
-          imgSrc="https://cdn-icons-png.freepik.com/512/0/747.png"
-          handleClick={() => {}}
-        />
+        <ThirdPartyButton imgSrc="../../assets/facebook-icon.svg" handleClick={() => {}} />
+        <ThirdPartyButton imgSrc="../../assets/google-icon.svg" handleClick={() => {}} />
+        <ThirdPartyButton imgSrc="../../assets/apple.svg" handleClick={() => {}} />
       </View>
       <View style={styles.loginContainer}>
         <Text style={styles.alreadyHaveAccount}>
