@@ -1,7 +1,559 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SignUpScreen should render the Sign Up Screen 1`] = `
-<Text>
-  Loading...
-</Text>
+<RNCSafeAreaView
+  edges={
+    {
+      "bottom": "additive",
+      "left": "additive",
+      "right": "additive",
+      "top": "additive",
+    }
+  }
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flexDirection": "column",
+      "gap": 30,
+      "justifyContent": "center",
+      "padding": 20,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#3F2212",
+        "fontFamily": "NotoSerif-Bold",
+        "fontSize": 40,
+        "fontWeight": "700",
+        "textAlign": "left",
+        "width": "100%",
+      }
+    }
+  >
+    Sign Up
+  </Text>
+  <View
+    style={
+      {
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#344054",
+          "fontFamily": "Roboto-Medium",
+          "fontSize": 16,
+          "paddingBottom": 10,
+          "textAlign": "left",
+          "width": "100%",
+        }
+      }
+    >
+      First & Last Name
+    </Text>
+    <TextInput
+      onChangeText={[Function]}
+      secureTextEntry={false}
+      style={
+        {
+          "borderColor": "#D0D5DD",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "color": "#344054",
+          "fontFamily": "Roboto-Regular",
+          "fontSize": 16,
+          "height": 40,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "left",
+          "width": "100%",
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      {
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#344054",
+          "fontFamily": "Roboto-Medium",
+          "fontSize": 16,
+          "paddingBottom": 10,
+          "textAlign": "left",
+          "width": "100%",
+        }
+      }
+    >
+      Username
+    </Text>
+    <TextInput
+      onChangeText={[Function]}
+      secureTextEntry={false}
+      style={
+        {
+          "borderColor": "#D0D5DD",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "color": "#344054",
+          "fontFamily": "Roboto-Regular",
+          "fontSize": 16,
+          "height": 40,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "left",
+          "width": "100%",
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      {
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#344054",
+          "fontFamily": "Roboto-Medium",
+          "fontSize": 16,
+          "paddingBottom": 10,
+          "textAlign": "left",
+          "width": "100%",
+        }
+      }
+    >
+      Email
+    </Text>
+    <TextInput
+      onChangeText={[Function]}
+      secureTextEntry={false}
+      style={
+        {
+          "borderColor": "#D0D5DD",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "color": "#344054",
+          "fontFamily": "Roboto-Regular",
+          "fontSize": 16,
+          "height": 40,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "left",
+          "width": "100%",
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      {
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#344054",
+          "fontFamily": "Roboto-Medium",
+          "fontSize": 16,
+          "paddingBottom": 10,
+          "textAlign": "left",
+          "width": "100%",
+        }
+      }
+    >
+      Password
+    </Text>
+    <TextInput
+      onChangeText={[Function]}
+      secureTextEntry={true}
+      style={
+        {
+          "borderColor": "#D0D5DD",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "color": "#344054",
+          "fontFamily": "Roboto-Regular",
+          "fontSize": 16,
+          "height": 40,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "left",
+          "width": "100%",
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      {
+        "paddingVertical": 20,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "backgroundColor": "#0D2818",
+            "borderColor": "#0D2818",
+            "color": "#FFFFFF",
+          },
+          {
+            "borderRadius": 8,
+            "borderWidth": 1,
+            "fontFamily": "Roboto-Medium",
+            "fontSize": 16,
+            "height": 56,
+            "paddingHorizontal": 40,
+            "paddingVertical": 16,
+            "textAlign": "center",
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      Sign Up
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "#E8ECF4",
+          "flex": 1,
+          "height": 1,
+        }
+      }
+    />
+    <View>
+      <Text
+        style={
+          {
+            "color": "#6A707C",
+            "fontFamily": "Inter-Medium",
+            "fontSize": 16,
+            "paddingHorizontal": 10,
+            "textAlign": "center",
+          }
+        }
+      >
+         Or register with 
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "#E8ECF4",
+          "flex": 1,
+          "height": 1,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#E8ECF4",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "height": 56,
+          "justifyContent": "center",
+          "opacity": 1,
+          "paddingHorizontal": 40,
+          "paddingVertical": 16,
+          "textAlign": "center",
+          "width": "30%",
+        }
+      }
+    >
+      <Image
+        source={
+          {
+            "uri": "https://img.freepik.com/premium-vector/facebook-icon-illustration-facebook-app-logo-social-media-icon_561158-3694.jpg?size=338&ext=jpg&ga=GA1.1.2082370165.1715644800&semt=ais_user",
+          }
+        }
+        style={
+          {
+            "height": 28,
+            "width": 28,
+          }
+        }
+      />
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#E8ECF4",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "height": 56,
+          "justifyContent": "center",
+          "opacity": 1,
+          "paddingHorizontal": 40,
+          "paddingVertical": 16,
+          "textAlign": "center",
+          "width": "30%",
+        }
+      }
+    >
+      <Image
+        source={
+          {
+            "uri": "https://img.freepik.com/premium-vector/google-logo-icon-set-google-icon-searching-icons-vector_981536-453.jpg",
+          }
+        }
+        style={
+          {
+            "height": 28,
+            "width": 28,
+          }
+        }
+      />
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#E8ECF4",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "height": 56,
+          "justifyContent": "center",
+          "opacity": 1,
+          "paddingHorizontal": 40,
+          "paddingVertical": 16,
+          "textAlign": "center",
+          "width": "30%",
+        }
+      }
+    >
+      <Image
+        source={
+          {
+            "uri": "https://cdn-icons-png.freepik.com/512/0/747.png",
+          }
+        }
+        style={
+          {
+            "height": 28,
+            "width": 28,
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "fontFamily": "Inter-Regular",
+          "fontSize": 16,
+        }
+      }
+    >
+      Already have an account?
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#769676",
+              "fontFamily": "Inter-Regular",
+              "fontSize": 16,
+              "paddingHorizontal": 5,
+            }
+          }
+        >
+          Login
+        </Text>
+      </View>
+    </Text>
+  </View>
+</RNCSafeAreaView>
 `;

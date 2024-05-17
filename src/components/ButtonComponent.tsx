@@ -8,13 +8,9 @@ type Props = {
 };
 
 const ButtonComponent: React.FC<Props> = ({ text, handleClick }: Props) => {
-  const [fontsLoaded] = useFonts({
+  useFonts({
     'Roboto-Medium': require('../../assets/fonts/Roboto/Roboto-Medium.ttf'),
   });
-
-  if (!fontsLoaded) {
-    return <Text>Loading...</Text>;
-  }
 
   return (
     <Pressable

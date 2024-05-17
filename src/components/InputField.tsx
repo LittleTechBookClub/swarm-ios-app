@@ -9,14 +9,10 @@ type Props = {
 };
 
 const InputField: React.FC<Props> = ({ label, isPassword, onChange }: Props) => {
-  const [fontsLoaded] = useFonts({
+  useFonts({
     'Roboto-Medium': require('../../assets/fonts/Roboto/Roboto-Medium.ttf'),
     'Roboto-Regular': require('../../assets/fonts/Roboto/Roboto-Regular.ttf'),
   });
-
-  if (!fontsLoaded) {
-    return <Text>Loading...</Text>;
-  }
 
   return (
     <View style={{ width: '100%' }}>

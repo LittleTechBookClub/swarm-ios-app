@@ -4,16 +4,12 @@ import ButtonComponent from '../components/ButtonComponent';
 import { View, StyleSheet, Image, Text } from 'react-native';
 
 const WelcomeScreen = ({ navigation }: { navigation: any }) => {
-  const [fontsLoaded] = useFonts({
+  useFonts({
     'Roboto-Medium': require('../../assets/fonts/Roboto/Roboto-Medium.ttf'),
     'Roboto-Regular': require('../../assets/fonts/Roboto/Roboto-Regular.ttf'),
     'NotoSerif-Bold': require('../../assets/fonts/NotoSerif/NotoSerif-Bold.ttf'),
     'Inter-Regular': require('../../assets/fonts/Inter/Inter-Regular.ttf'),
   });
-
-  if (!fontsLoaded) {
-    return <Text>Loading...</Text>;
-  }
 
   function handleLogin(): void {
     navigation.navigate('LoginScreen');

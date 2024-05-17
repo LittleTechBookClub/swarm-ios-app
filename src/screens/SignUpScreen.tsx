@@ -12,15 +12,11 @@ const SignUpScreen = () => {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
 
-  const [fontsLoaded] = useFonts({
+  useFonts({
     'NotoSerif-Bold': require('../../assets/fonts/NotoSerif/NotoSerif-Bold.ttf'),
     'Inter-Medium': require('../../assets/fonts/Inter/Inter-Medium.ttf'),
     'Inter-Regular': require('../../assets/fonts/Inter/Inter-Regular.ttf'),
   });
-
-  if (!fontsLoaded) {
-    return <Text>Loading...</Text>;
-  }
 
   const handleSubmit = () => {
     console.log(fullName, username, email, password);
