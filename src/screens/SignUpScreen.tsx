@@ -7,11 +7,12 @@ import ButtonComponent from '../components/ButtonComponent';
 import ThirdPartyButton from '../components/ThirdPartyButton';
 
 const SignUpScreen = ({ navigation }: { navigation: any }) => {
-  const [fullName, setFullName] = React.useState('');
-  const [username, setUsername] = React.useState('');
-  const [email, setEmail] = React.useState('');
-  const [password, setPassword] = React.useState('');
-
+  const [values, setValues] = React.useState({
+    fullName: '',
+    username: '',
+    email: '',
+    password: '',
+  });
   useFonts({
     'NotoSerif-Bold': require('../../assets/fonts/NotoSerif/NotoSerif-Bold.ttf'),
     'Inter-Medium': require('../../assets/fonts/Inter/Inter-Medium.ttf'),
@@ -19,7 +20,7 @@ const SignUpScreen = ({ navigation }: { navigation: any }) => {
   });
 
   const handleSubmit = () => {
-    console.log(fullName, username, email, password);
+    console.log(values);
     // TODO: Add logic to sign up
   };
 
@@ -29,11 +30,23 @@ const SignUpScreen = ({ navigation }: { navigation: any }) => {
       <InputField
         label="First & Last Name"
         isPassword={false}
-        onChange={(text) => setFullName(text)}
+        onChange={(text) => setValues({ ...values, fullName: text })}
       />
-      <InputField label="Username" isPassword={false} onChange={(text) => setUsername(text)} />
-      <InputField label="Email" isPassword={false} onChange={(text) => setEmail(text)} />
-      <InputField label="Password" isPassword={true} onChange={(text) => setPassword(text)} />
+      <InputField
+        label="Username"
+        isPassword={false}
+        onChange={(text) => setValues({ ...values, username: text })}
+      />
+      <InputField
+        label="Email"
+        isPassword={false}
+        onChange={(text) => setValues({ ...values, email: text })}
+      />
+      <InputField
+        label="Password"
+        isPassword={true}
+        onChange={(text) => setValues({ ...values, password: text })}
+      />
       <View style={styles.button}>
         <ButtonComponent text="Sign Up" handleClick={handleSubmit} />
       </View>
