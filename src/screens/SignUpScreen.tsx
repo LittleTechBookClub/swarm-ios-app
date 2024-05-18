@@ -45,9 +45,24 @@ const SignUpScreen = () => {
         <View style={styles.divisionLine} />
       </View>
       <View style={styles.thirdPartyButtonContainer}>
-        <ThirdPartyButton imgSrc="../../assets/facebook-icon.svg" handleClick={() => {}} />
-        <ThirdPartyButton imgSrc="../../assets/google-icon.svg" handleClick={() => {}} />
-        <ThirdPartyButton imgSrc="../../assets/apple.svg" handleClick={() => {}} />
+        <ThirdPartyButton
+          imgSrc="../../assets/facebook-icon.svg"
+          handleClick={() => {}}
+          width={15}
+          height={28}
+        />
+        <ThirdPartyButton
+          imgSrc="../../assets/google-icon.svg"
+          handleClick={() => {}}
+          width={24}
+          height={24}
+        />
+        <ThirdPartyButton
+          imgSrc="../../assets/apple.svg"
+          handleClick={() => {}}
+          width={24}
+          height={24}
+        />
       </View>
       <View style={styles.loginContainer}>
         <Text style={styles.alreadyHaveAccount}>

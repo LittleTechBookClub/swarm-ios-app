@@ -4,12 +4,14 @@ import { StyleSheet, TouchableOpacity, Image } from 'react-native';
 type Props = {
   imgSrc: string;
   handleClick: () => void;
+  width: number;
+  height: number;
 };
 
-const ThirdPartyButton: React.FC<Props> = ({ imgSrc, handleClick }: Props) => {
+const ThirdPartyButton: React.FC<Props> = ({ imgSrc, handleClick, width, height }: Props) => {
   return (
     <TouchableOpacity onPress={handleClick} style={styles.buttonContainer}>
-      <Image source={{ uri: imgSrc }} style={{ width: 28, height: 28 }} />
+      <Image source={{ uri: imgSrc }} style={{ width: width, height: height }} />
     </TouchableOpacity>
   );
 };
