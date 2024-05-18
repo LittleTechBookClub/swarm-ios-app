@@ -6,7 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import ButtonComponent from '../components/ButtonComponent';
 import ThirdPartyButton from '../components/ThirdPartyButton';
 
-const SignUpScreen = () => {
+const SignUpScreen = ({ navigation }: { navigation: any }) => {
   const [fullName, setFullName] = React.useState('');
   const [username, setUsername] = React.useState('');
   const [email, setEmail] = React.useState('');
@@ -67,7 +67,7 @@ const SignUpScreen = () => {
       <View style={styles.loginContainer}>
         <Text style={styles.alreadyHaveAccount}>
           Already have an account?
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('LoginScreen')}>
             <Text style={styles.login}>Login</Text>
           </TouchableOpacity>
         </Text>
