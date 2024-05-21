@@ -3,21 +3,40 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { StyleSheet, Text, View } from 'react-native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { StyleSheet, View, Text } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 import Contributors from './Contributors';
-import ButtonComponent from './components/ButtonComponent';
+import WelcomeScreen from './screens/WelcomeScreen';
+import LoginScreen from './screens/LoginScreen';
+import SignUpScreen from './screens/SignUpScreen';
 
 const Tab = createBottomTabNavigator();
+const Stack = createNativeStackNavigator();
 
-const HomeScreen = () => {
+const TestScreen = () => {
   return (
     <View style={styles.container}>
       <Text>Swarm Beekeeping App</Text>
-      <ButtonComponent text="Get Started" handleClick={() => console.log('clicked')} />
       <StatusBar style="auto" />
     </View>
+  );
+};
+
+const HomeStack = () => {
+  return (
+    <Stack.Navigator
+      initialRouteName="HomeScreen"
+      screenOptions={{
+        headerTitle: 'BeeSmart',
+        headerBackImageSource: require('../assets/leftArrow.png'),
+      }}
+    >
+      <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
+      <Stack.Screen name="LoginScreen" component={LoginScreen} />
+      <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
+    </Stack.Navigator>
   );
 };
 
@@ -33,8 +52,9 @@ const App = () => {
               iconName = focused ? 'information-circle' : 'information-circle-outline';
             } else if (route.name === 'Contributors') {
               iconName = focused ? 'list' : 'list-outline';
+            } else if (route.name === 'Test Screen') {
+              iconName = 'cog-outline';
             }
-
             // You can return any component that you like here!
             return <Ionicons name={iconName} size={size} color={color} />;
           },
@@ -42,8 +62,9 @@ const App = () => {
           tabBarInactiveTintColor: 'gray',
         })}
       >
-        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Home" component={HomeStack} options={{ headerShown: false }} />
         <Tab.Screen name="Contributors" component={Contributors} />
+        <Tab.Screen name="Test Screen" component={TestScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
