@@ -7,6 +7,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 import Contributors from './Contributors';
+import ButtonComponent from './components/ButtonComponent';
 
 const Tab = createBottomTabNavigator();
 
@@ -14,10 +15,11 @@ const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <Text>Swarm Beekeeping App</Text>
+      <ButtonComponent text="Get Started" handleClick={() => console.log('clicked')} />
       <StatusBar style="auto" />
     </View>
   );
-}
+};
 
 const App = () => {
   return (
@@ -28,9 +30,7 @@ const App = () => {
             let iconName!: keyof typeof Ionicons.glyphMap;
 
             if (route.name === 'Home') {
-              iconName = focused
-                ? 'information-circle'
-                : 'information-circle-outline';
+              iconName = focused ? 'information-circle' : 'information-circle-outline';
             } else if (route.name === 'Contributors') {
               iconName = focused ? 'list' : 'list-outline';
             }
@@ -44,11 +44,10 @@ const App = () => {
       >
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Contributors" component={Contributors} />
-      </Tab.Navigator >
-    </NavigationContainer >
-
+      </Tab.Navigator>
+    </NavigationContainer>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
