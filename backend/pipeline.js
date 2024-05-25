@@ -39,7 +39,7 @@ function createTable(conn) {
   // table can be edit as needed to fit the data needs
   const createTableSql = `
       CREATE TABLE IF NOT EXISTS transcripts (
-          id INTEGER PRIMARY KEY,
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
           file_name TEXT UNIQUE,
           transcript TEXT NOT NULL,
           ai_summary TEXT NOT NULL
