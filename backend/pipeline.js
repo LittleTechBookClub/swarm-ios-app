@@ -41,7 +41,8 @@ function createTable(conn) {
       CREATE TABLE IF NOT EXISTS transcripts (
           id INTEGER PRIMARY KEY,
           file_name TEXT UNIQUE,
-          content TEXT NOT NULL
+          transcript TEXT NOT NULL,
+          ai_summary TEXT NOT NULL
       );
   `;
   // test to see contents of table
