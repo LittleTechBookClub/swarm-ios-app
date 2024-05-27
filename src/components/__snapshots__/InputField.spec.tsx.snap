@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SignUpScreen should render the SignUp Screen 1`] = `
+exports[`InputField should render the Input Field 1`] = `
 <View
   style={
     {
@@ -20,7 +20,7 @@ exports[`SignUpScreen should render the SignUp Screen 1`] = `
       }
     }
   >
-    Email
+    test
   </Text>
   <TextInput
     onChangeText={[Function]}
