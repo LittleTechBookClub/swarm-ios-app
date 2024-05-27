@@ -15,15 +15,6 @@ import SignUpScreen from './screens/SignUpScreen';
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
-const TestScreen = () => {
-  return (
-    <View style={styles.container}>
-      <Text>Swarm Beekeeping App</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-};
-
 const HomeStack = () => {
   return (
     <Stack.Navigator
@@ -52,8 +43,6 @@ const App = () => {
               iconName = focused ? 'information-circle' : 'information-circle-outline';
             } else if (route.name === 'Contributors') {
               iconName = focused ? 'list' : 'list-outline';
-            } else if (route.name === 'Test Screen') {
-              iconName = 'cog-outline';
             }
             // You can return any component that you like here!
             return <Ionicons name={iconName} size={size} color={color} />;
@@ -64,7 +53,6 @@ const App = () => {
       >
         <Tab.Screen name="Home" component={HomeStack} options={{ headerShown: false }} />
         <Tab.Screen name="Contributors" component={Contributors} />
-        <Tab.Screen name="Test Screen" component={TestScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
