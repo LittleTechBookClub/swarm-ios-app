@@ -69,7 +69,7 @@ function createTable(conn) {
 // Main function
 async function main() {
   //File pathway for the transcript database for sql lite
-  const database = path.join(__dirname, 'transcripts.db');
+  const database = path.join(__dirname, 'database.db');
   // print statement to identify which function is bein called
   console.log(`Creating database file at '${database}'`);
   // passes the database pathway to the createdatabase function

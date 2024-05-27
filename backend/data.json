@@ -1,0 +1,19 @@
+{
+  "date": "March 6, 2042",
+  "trends": {
+    "hive health": "poor",
+    "queen status": "absent",
+    "brood levels": "low",
+    "food stores": "low"
+  },
+  "important information": [
+    "Signs of infection (holes in cell caps)",
+    "Queen has left the hive"
+  ],
+  "possible causes": [
+    "Disease (foulbrood, etc.)",
+    "Pests (varroa mites, etc.)",
+    "Starvation",
+    "Queen failure"
+  ]
+}
