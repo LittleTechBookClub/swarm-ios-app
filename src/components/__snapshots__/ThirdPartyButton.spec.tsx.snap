@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SignUpScreen should render the SignUp Screen 1`] = `
+exports[`ThirdPartyButton should render the Third Party Button 1`] = `
 <View
   accessibilityState={
     {
@@ -48,13 +48,13 @@ exports[`SignUpScreen should render the SignUp Screen 1`] = `
   <Image
     source={
       {
-        "uri": "./assets/google-icon.svg",
+        "uri": "test",
       }
     }
     style={
       {
-        "height": 40,
-        "width": 40,
+        "height": 20,
+        "width": 20,
       }
     }
   />
