@@ -7,10 +7,10 @@ import { render } from '@testing-library/react-native';
 import Contributors from './Contributors';
 
 describe('Contributors', () => {
-    it('should render the correct number of contributors', () => {
-        const contributors = 5;
-        const { getAllByLabelText } = render(<Contributors />);
-        const contributorElements = getAllByLabelText('Contributor');
-        expect(contributorElements.length).toBe(contributors);
-    });
+  it('should render the correct number of contributors', () => {
+    const contributors = 6;
+    const { getAllByLabelText } = render(<Contributors />);
+    const contributorElements = getAllByLabelText('Contributor');
+    expect(contributorElements.length).toBe(contributors);
+  });
 });
