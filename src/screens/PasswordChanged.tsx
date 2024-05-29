@@ -5,51 +5,67 @@ import Button from '../components/ButtonComponent';
 import successSticker from '../../assets/successSticker.png';
 import strings from '../Strings';
 
-const PasswordChanged = ({}) => {
+const PasswordChanged = ({ navigation }: { navigation: any }) => {
   useFonts({
     'Roboto-Bold': require('../../assets/fonts/Roboto/Roboto-Bold.ttf'),
     'Roboto-Regular': require('../../assets/fonts/Roboto/Roboto-Regular.ttf'),
   });
+
+  function handleBackToLogin() {
+    console.log('password changed and back to login!');
+    navigation.navigate('LoginScreen');
+  }
+
   return (
     <View style={styles.container}>
       <View style={styles.body}>
         <Image source={successSticker} />
         <Text style={styles.title}>{strings.passwordChanged.title}</Text>
         <Text style={styles.subtitle}>{strings.passwordChanged.subtitle}</Text>
+        <Button
+          style={styles.button}
+          text={strings.passwordChanged.button}
+          handleClick={handleBackToLogin}
+        />
       </View>
-      <Button
-        text={strings.passwordChanged.button}
-        handleClick={() => console.log('password changed!')}
-      />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    marginHorizontal: '24px',
-    backgroundColor: 'FFFFFF',
+    backgroundColor: '#FFFFFF',
+    width: '100%',
+    height: '100%',
   },
   body: {
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
-    paddingTop: '64px',
-    marginBottom: '32px',
+    paddingTop: 24,
+    marginBottom: 32,
+    marginHorizontal: 24,
   },
   title: {
-    marginTop: '32px',
-    marginBottom: '10px',
+    marginTop: 32,
+    marginBottom: 10,
     fontFamily: 'Roboto-Bold',
-    fontWeight: 700,
-    fontSize: '26px',
+    fontWeight: '700',
+    fontSize: 26,
   },
   subtitle: {
     fontFamily: 'Roboto-Regular',
-    fontWeight: 500,
+    fontSize: 15,
+    fontWeight: '500',
     color: '#8391A1',
-    paddingHorizontal: '60px',
+    paddingHorizontal: 60,
     textAlign: 'center',
+    marginBottom: 24,
+  },
+  button: {
+    fontFamily: 'Roboto-Regular',
+    fontWeight: '600',
+    fontSize: 15,
   },
 });
 
