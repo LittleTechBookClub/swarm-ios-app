@@ -22,11 +22,7 @@ const PasswordChanged = ({ navigation }: { navigation: any }) => {
         <Image source={successSticker} />
         <Text style={styles.title}>{strings.passwordChanged.title}</Text>
         <Text style={styles.subtitle}>{strings.passwordChanged.subtitle}</Text>
-        <Button
-          style={styles.button}
-          text={strings.passwordChanged.button}
-          handleClick={handleBackToLogin}
-        />
+        <Button text={strings.passwordChanged.button} handleClick={handleBackToLogin} />
       </View>
     </View>
   );
@@ -61,11 +57,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 60,
     textAlign: 'center',
     marginBottom: 24,
-  },
-  button: {
-    fontFamily: 'Roboto-Regular',
-    fontWeight: '600',
-    fontSize: 15,
   },
 });
 
