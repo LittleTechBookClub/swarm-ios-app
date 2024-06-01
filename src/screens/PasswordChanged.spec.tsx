@@ -2,7 +2,6 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
 import PasswordChanged from './PasswordChanged';
 import strings from '../Strings';
-import successSticker from '../../assets/successSticker.png';
 
 //create mock navigation
 const mockNavigate = jest.fn();
