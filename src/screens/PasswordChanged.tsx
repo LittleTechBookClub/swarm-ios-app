@@ -19,10 +19,14 @@ const PasswordChanged = ({ navigation }: { navigation: any }) => {
   return (
     <View style={styles.container}>
       <View style={styles.body}>
-        <Image source={successSticker} />
+        <Image source={successSticker} testID="success-sticker" />
         <Text style={styles.title}>{strings.passwordChanged.title}</Text>
         <Text style={styles.subtitle}>{strings.passwordChanged.subtitle}</Text>
-        <Button text={strings.passwordChanged.button} handleClick={handleBackToLogin} />
+        <Button
+          text={strings.passwordChanged.button}
+          handleClick={handleBackToLogin}
+          testID="back-to-login-button"
+        />
       </View>
     </View>
   );
