@@ -4,7 +4,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, View, Text, Pressable, Image } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 import Contributors from './Contributors';
@@ -35,12 +35,12 @@ const HomeStack = () => {
           headerTitle: '',
           headerShadowVisible: false,
           headerLeft: () => (
-            <TouchableOpacity onPress={() => navigation.goBack()} style={{ marginLeft: 15 }}>
+            <Pressable onPress={() => navigation.goBack()} style={{ marginLeft: 15 }}>
               <Image
                 source={require('../assets/leftArrow.png')}
                 style={{ width: 20, height: 20 }}
               />
-            </TouchableOpacity>
+            </Pressable>
           ),
         })}
       />
@@ -79,12 +79,12 @@ const App = () => {
             headerTitle: '',
             headerShadowVisible: false,
             headerLeft: () => (
-              <TouchableOpacity onPress={() => navigation.goBack()} style={{ marginLeft: 15 }}>
+              <Pressable onPress={() => navigation.goBack()} style={{ marginLeft: 15 }}>
                 <Image
                   source={require('../assets/leftArrow.png')}
                   style={{ width: 20, height: 20 }}
                 />
-              </TouchableOpacity>
+              </Pressable>
             ),
           })}
         />
