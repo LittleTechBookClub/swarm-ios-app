@@ -60,8 +60,6 @@ const App = () => {
               iconName = focused ? 'information-circle' : 'information-circle-outline';
             } else if (route.name === 'Contributors') {
               iconName = focused ? 'list' : 'list-outline';
-            } else if (route.name === 'Password Changed Screen') {
-              iconName = focused ? 'save' : 'save-outline';
             }
             // You can return any component that you like here!
             return <Ionicons name={iconName} size={size} color={color} />;
@@ -72,22 +70,6 @@ const App = () => {
       >
         <Tab.Screen name="Home" component={HomeStack} options={{ headerShown: false }} />
         <Tab.Screen name="Contributors" component={Contributors} />
-        <Tab.Screen
-          name="Password Changed Screen"
-          component={PasswordChanged}
-          options={({ navigation }) => ({
-            headerTitle: '',
-            headerShadowVisible: false,
-            headerLeft: () => (
-              <Pressable onPress={() => navigation.goBack()} style={{ marginLeft: 15 }}>
-                <Image
-                  source={require('../assets/leftArrow.png')}
-                  style={{ width: 20, height: 20 }}
-                />
-              </Pressable>
-            ),
-          })}
-        />
       </Tab.Navigator>
     </NavigationContainer>
   );
