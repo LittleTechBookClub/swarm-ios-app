@@ -12,7 +12,6 @@ const PasswordChanged = ({ navigation }: { navigation: any }) => {
   });
 
   function handleBackToLogin() {
-    console.log('password changed and back to login!');
     navigation.navigate('LoginScreen');
   }
 
