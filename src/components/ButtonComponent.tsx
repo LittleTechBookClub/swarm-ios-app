@@ -5,9 +5,10 @@ import { Text, StyleSheet, Pressable } from 'react-native';
 type Props = {
   text: string;
   handleClick: () => void;
+  testID?: string;
 };
 
-const ButtonComponent: React.FC<Props> = ({ text, handleClick }: Props) => {
+const ButtonComponent: React.FC<Props> = ({ text, handleClick, testID }: Props) => {
   useFonts({
     'Roboto-Medium': require('../../assets/fonts/Roboto/Roboto-Medium.ttf'),
   });
@@ -23,6 +24,7 @@ const ButtonComponent: React.FC<Props> = ({ text, handleClick }: Props) => {
         styles.buttonContainer,
       ]}
       onPress={handleClick}
+      testID={testID}
     >
       {text}
     </Pressable>
