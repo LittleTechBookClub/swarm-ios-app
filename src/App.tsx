@@ -6,6 +6,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StyleSheet, View, Text, Pressable, Image } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import leftArrow from '../assets/leftArrow.png';
 
 import Contributors from './Contributors';
 import WelcomeScreen from './screens/WelcomeScreen';
@@ -22,7 +23,7 @@ const HomeStack = () => {
       initialRouteName="HomeScreen"
       screenOptions={{
         headerTitle: 'BeeSmart',
-        headerBackImageSource: require('../assets/leftArrow.png'),
+        headerBackImageSource: leftArrow,
       }}
     >
       <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
