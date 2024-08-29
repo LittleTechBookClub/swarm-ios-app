@@ -4,13 +4,15 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, Pressable, Image } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import leftArrow from '../assets/leftArrow.png';
 
 import Contributors from './Contributors';
 import WelcomeScreen from './screens/WelcomeScreen';
 import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
+import PasswordChanged from './screens/PasswordChanged';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -21,12 +23,28 @@ const HomeStack = () => {
       initialRouteName="HomeScreen"
       screenOptions={{
         headerTitle: 'BeeSmart',
-        headerBackImageSource: require('../assets/leftArrow.png'),
+        headerBackImageSource: leftArrow,
       }}
     >
       <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
       <Stack.Screen name="LoginScreen" component={LoginScreen} />
       <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
+      <Stack.Screen
+        name="PasswordChanged"
+        component={PasswordChanged}
+        options={({ navigation }) => ({
+          headerTitle: '',
+          headerShadowVisible: false,
+          headerLeft: () => (
+            <Pressable onPress={() => navigation.goBack()} style={{ marginLeft: 15 }}>
+              <Image
+                source={require('../assets/leftArrow.png')}
+                style={{ width: 20, height: 20 }}
+              />
+            </Pressable>
+          ),
+        })}
+      />
     </Stack.Navigator>
   );
 };
