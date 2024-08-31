@@ -9,6 +9,7 @@ const Contributors = () => {
     'Shilpa Sivarajan',
     'Derik Vo',
     'Benicio Vargas',
+    'Phillip Sanchez',
   ];
 
   return (
